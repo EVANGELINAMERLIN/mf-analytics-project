@@ -1,0 +1,383 @@
+Customer_ID,Total_Spend,Total_Orders,Avg_Order,Return_Count,Segment,Fav_Category,Fav_Payment,Fav_City,Return_Rate
+CUST0001,223427.09999999998,3,74475.7,0,Gold,Laptops,Debit Card,Delhi,0.0
+CUST0004,345675.81,4,86418.9525,1,Gold,Laptops,Debit Card,Jaipur,25.0
+CUST0005,57021.65999999999,3,19007.219999999998,0,Bronze,Audio & Headphones,Credit Card,Pune,0.0
+CUST0006,311044.24,3,103681.41333333333,0,Gold,Smartphones,UPI,Pune,0.0
+CUST0007,678819.15,7,96974.16428571429,0,Gold,Laptops,UPI,Delhi,0.0
+CUST0008,105750.1,3,35250.03333333333,0,Silver,Tablets,Debit Card,Bangalore,0.0
+CUST0009,302092.69999999995,6,50348.783333333326,1,Gold,Tablets,UPI,Mumbai,16.7
+CUST0011,277688.44,3,92562.81333333334,0,Gold,Smartphones,UPI,Chennai,0.0
+CUST0012,71349.56,2,35674.78,0,Bronze,Smartphones,UPI,Lucknow,0.0
+CUST0013,645677.02,4,161419.255,0,Gold,Smartphones,Credit Card,Mumbai,0.0
+CUST0014,114356.23999999999,2,57178.119999999995,0,Silver,Tablets,Credit Card,Lucknow,0.0
+CUST0015,228458.78999999998,5,45691.757999999994,0,Gold,Smartphones,UPI,Ahmedabad,0.0
+CUST0016,56368.82,1,56368.82,0,Bronze,Laptops,UPI,Ahmedabad,0.0
+CUST0017,172726.16,4,43181.54,0,Silver,Smart Watches,Credit Card,Pune,0.0
+CUST0018,214772.72,4,53693.18,0,Gold,Smartphones,Debit Card,Chennai,0.0
+CUST0019,953.84,1,953.84,0,Bronze,Audio & Headphones,Debit Card,Ahmedabad,0.0
+CUST0020,118815.19,2,59407.595,1,Silver,Audio & Headphones,UPI,Mumbai,50.0
+CUST0021,268736.01,4,67184.0025,1,Gold,Tablets,Debit Card,Delhi,25.0
+CUST0022,85756.17,2,42878.085,0,Silver,Smartphones,Credit Card,Delhi,0.0
+CUST0023,4171.09,1,4171.09,0,Bronze,Accessories,Debit Card,Bangalore,0.0
+CUST0024,47465.16,1,47465.16,0,Bronze,Smartphones,UPI,Kolkata,0.0
+CUST0025,199997.74,4,49999.435,0,Silver,Accessories,Debit Card,Mumbai,0.0
+CUST0026,547576.8200000001,5,109515.36400000002,0,Gold,Smartphones,Net Banking,Mumbai,0.0
+CUST0027,200635.12,3,66878.37333333334,0,Gold,Smartphones,UPI,Mumbai,0.0
+CUST0028,458620.75,7,65517.25,1,Gold,Smartphones,UPI,Mumbai,14.3
+CUST0029,244545.21000000002,4,61136.302500000005,2,Gold,Audio & Headphones,UPI,Hyderabad,50.0
+CUST0030,176842.78,3,58947.59333333333,2,Silver,Smartphones,UPI,Hyderabad,66.7
+CUST0031,107383.37,3,35794.456666666665,0,Silver,Accessories,Credit Card,Delhi,0.0
+CUST0032,62187.759999999995,2,31093.879999999997,0,Bronze,Smartphones,UPI,Pune,0.0
+CUST0033,131074.18,2,65537.09,0,Silver,Smartphones,UPI,Hyderabad,0.0
+CUST0035,426596.94999999995,4,106649.23749999999,1,Gold,Smartphones,UPI,Mumbai,25.0
+CUST0036,107649.28,3,35883.09333333333,0,Silver,Smart Watches,Credit Card,Delhi,0.0
+CUST0037,133607.7,1,133607.7,0,Silver,Smart Watches,Credit Card,Pune,0.0
+CUST0038,166685.85,2,83342.925,0,Silver,Tablets,Credit Card,Chennai,0.0
+CUST0039,51832.66,1,51832.66,0,Bronze,Smartphones,Net Banking,Bangalore,0.0
+CUST0040,208453.55,3,69484.51666666666,0,Gold,Smart Watches,UPI,Hyderabad,0.0
+CUST0041,302223.95,3,100741.31666666667,0,Gold,Smartphones,UPI,Ahmedabad,0.0
+CUST0042,88007.65000000001,2,44003.825000000004,0,Silver,Smartphones,Credit Card,Chennai,0.0
+CUST0043,119220.15,4,29805.0375,2,Silver,Accessories,Debit Card,Bangalore,50.0
+CUST0044,261994.79,4,65498.6975,0,Gold,Smart Watches,Net Banking,Chennai,0.0
+CUST0045,28802.49,3,9600.83,0,Bronze,Accessories,UPI,Bangalore,0.0
+CUST0047,155266.45,4,38816.6125,0,Silver,Accessories,Debit Card,Chennai,0.0
+CUST0048,135921.19,4,33980.2975,0,Silver,Audio & Headphones,Credit Card,Hyderabad,0.0
+CUST0049,95235.71,4,23808.9275,0,Silver,Tablets,Credit Card,Chennai,0.0
+CUST0050,416228.24,5,83245.648,1,Gold,Laptops,Credit Card,Hyderabad,20.0
+CUST0051,79802.61,2,39901.305,0,Bronze,Smartphones,UPI,Mumbai,0.0
+CUST0052,669816.33,9,74424.03666666667,1,Gold,Smart Watches,UPI,Chennai,11.1
+CUST0053,279838.38,7,39976.91142857143,0,Gold,Smartphones,UPI,Ahmedabad,0.0
+CUST0054,97395.95999999999,2,48697.979999999996,1,Silver,Smartphones,Debit Card,Kolkata,50.0
+CUST0055,203903.86,2,101951.93,0,Gold,Laptops,UPI,Jaipur,0.0
+CUST0056,59167.83,4,14791.9575,2,Bronze,Accessories,UPI,Ahmedabad,50.0
+CUST0057,69104.84,2,34552.42,0,Bronze,Smart Watches,UPI,Hyderabad,0.0
+CUST0058,675932.86,4,168983.215,0,Gold,Smartphones,UPI,Mumbai,0.0
+CUST0060,665715.89,8,83214.48625,0,Gold,Smartphones,UPI,Bangalore,0.0
+CUST0061,365539.68,5,73107.936,0,Gold,Tablets,Credit Card,Ahmedabad,0.0
+CUST0062,142787.45,2,71393.725,0,Silver,Laptops,UPI,Mumbai,0.0
+CUST0063,49623.6,3,16541.2,0,Bronze,Smartphones,Credit Card,Chennai,0.0
+CUST0064,327134.47,7,46733.49571428571,1,Gold,Accessories,Credit Card,Chennai,14.3
+CUST0065,36926.68,1,36926.68,0,Bronze,Audio & Headphones,Credit Card,Hyderabad,0.0
+CUST0066,195082.1,5,39016.42,0,Silver,Smart Watches,UPI,Pune,0.0
+CUST0067,228654.1,3,76218.03333333334,0,Gold,Smartphones,Net Banking,Jaipur,0.0
+CUST0068,378519.08999999997,3,126173.02999999998,0,Gold,Accessories,UPI,Hyderabad,0.0
+CUST0069,2566.12,1,2566.12,0,Bronze,Accessories,UPI,Ahmedabad,0.0
+CUST0070,137760.92,5,27552.184,1,Silver,Accessories,UPI,Delhi,20.0
+CUST0071,219961.74,5,43992.348,3,Gold,Smartphones,UPI,Kolkata,60.0
+CUST0072,264400.08,3,88133.36,0,Gold,Smartphones,Net Banking,Mumbai,0.0
+CUST0073,55600.12,2,27800.06,0,Bronze,Accessories,Net Banking,Hyderabad,0.0
+CUST0074,310237.35,4,77559.3375,0,Gold,Laptops,Cash on Delivery,Mumbai,0.0
+CUST0075,349981.78,4,87495.445,2,Gold,Smartphones,Debit Card,Mumbai,50.0
+CUST0076,113594.01000000001,3,37864.670000000006,0,Silver,Smart Watches,Net Banking,Delhi,0.0
+CUST0077,306802.38,6,51133.73,0,Gold,Laptops,Debit Card,Mumbai,0.0
+CUST0078,167910.4,2,83955.2,1,Silver,Smart Watches,Cash on Delivery,Ahmedabad,50.0
+CUST0079,66820.11,3,22273.37,0,Bronze,Accessories,Credit Card,Hyderabad,0.0
+CUST0080,85709.74,2,42854.87,0,Silver,Smart Watches,Credit Card,Delhi,0.0
+CUST0081,31579.34,1,31579.34,0,Bronze,Tablets,UPI,Delhi,0.0
+CUST0082,417779.76,6,69629.96,1,Gold,Laptops,Debit Card,Delhi,16.7
+CUST0083,277490.74,5,55498.148,0,Gold,Tablets,UPI,Delhi,0.0
+CUST0084,141844.34999999998,2,70922.17499999999,0,Silver,Tablets,UPI,Mumbai,0.0
+CUST0085,145904.12,3,48634.706666666665,0,Silver,Laptops,UPI,Delhi,0.0
+CUST0086,96739.89,3,32246.63,1,Silver,Audio & Headphones,Credit Card,Mumbai,33.3
+CUST0087,158676.81000000003,2,79338.40500000001,0,Silver,Laptops,UPI,Delhi,0.0
+CUST0088,339626.26,4,84906.565,0,Gold,Laptops,UPI,Jaipur,0.0
+CUST0089,14899.92,1,14899.92,0,Bronze,Smart Watches,UPI,Mumbai,0.0
+CUST0090,63194.05,2,31597.025,0,Bronze,Audio & Headphones,UPI,Bangalore,0.0
+CUST0091,196664.13,4,49166.0325,0,Silver,Laptops,Credit Card,Hyderabad,0.0
+CUST0092,596888.34,9,66320.92666666667,0,Gold,Smart Watches,Credit Card,Delhi,0.0
+CUST0093,181344.7,3,60448.23333333334,0,Silver,Smartphones,UPI,Ahmedabad,0.0
+CUST0094,103106.49,3,34368.83,0,Silver,Laptops,Credit Card,Delhi,0.0
+CUST0095,245453.13,3,81817.71,1,Gold,Smart Watches,UPI,Mumbai,33.3
+CUST0096,189645.03,3,63215.01,0,Silver,Laptops,UPI,Kolkata,0.0
+CUST0097,185547.66,3,61849.22,0,Silver,Tablets,Net Banking,Chennai,0.0
+CUST0098,477988.32999999996,11,43453.48454545454,1,Gold,Tablets,UPI,Bangalore,9.1
+CUST0099,266785.94999999995,3,88928.64999999998,0,Gold,Laptops,Cash on Delivery,Bangalore,0.0
+CUST0100,58468.48,1,58468.48,0,Bronze,Smartphones,UPI,Kolkata,0.0
+CUST0101,198949.07,2,99474.535,1,Silver,Laptops,Debit Card,Delhi,50.0
+CUST0102,96584.09,2,48292.045,0,Silver,Accessories,UPI,Chennai,0.0
+CUST0103,459700.16,3,153233.38666666666,1,Gold,Smartphones,UPI,Bangalore,33.3
+CUST0104,124108.12,4,31027.03,0,Silver,Tablets,Credit Card,Delhi,0.0
+CUST0105,49584.47,2,24792.235,1,Bronze,Smart Watches,UPI,Delhi,50.0
+CUST0106,312472.14,1,312472.14,0,Gold,Laptops,Debit Card,Delhi,0.0
+CUST0107,1390.85,1,1390.85,0,Bronze,Smart Watches,UPI,Pune,0.0
+CUST0108,179577.45,4,44894.3625,1,Silver,Laptops,UPI,Delhi,25.0
+CUST0109,263147.19,5,52629.438,0,Gold,Smart Watches,UPI,Mumbai,0.0
+CUST0110,181466.87,2,90733.435,0,Silver,Audio & Headphones,Cash on Delivery,Pune,0.0
+CUST0111,110157.82,3,36719.27333333334,0,Silver,Smart Watches,Credit Card,Mumbai,0.0
+CUST0112,52715.54,1,52715.54,0,Bronze,Smartphones,Debit Card,Mumbai,0.0
+CUST0113,393282.53,4,98320.6325,1,Gold,Smartphones,Credit Card,Delhi,25.0
+CUST0114,42264.89,3,14088.296666666667,0,Bronze,Audio & Headphones,UPI,Mumbai,0.0
+CUST0115,104026.56,2,52013.28,0,Silver,Smartphones,Net Banking,Ahmedabad,0.0
+CUST0116,354969.78,4,88742.445,0,Gold,Smartphones,Credit Card,Delhi,0.0
+CUST0117,257033.6,6,42838.933333333334,1,Gold,Smartphones,UPI,Bangalore,16.7
+CUST0118,31237.94,2,15618.97,1,Bronze,Accessories,Credit Card,Mumbai,50.0
+CUST0119,142300.28,2,71150.14,0,Silver,Smartphones,Credit Card,Delhi,0.0
+CUST0120,74037.23000000001,4,18509.307500000003,1,Bronze,Accessories,Debit Card,Delhi,25.0
+CUST0121,192681.75,2,96340.875,0,Silver,Smartphones,Debit Card,Bangalore,0.0
+CUST0122,95324.44,2,47662.22,0,Silver,Tablets,Debit Card,Mumbai,0.0
+CUST0123,139047.55000000002,2,69523.77500000001,0,Silver,Smartphones,UPI,Delhi,0.0
+CUST0124,633450.75,7,90492.96428571429,2,Gold,Smartphones,Credit Card,Delhi,28.6
+CUST0125,509018.56999999995,3,169672.85666666666,0,Gold,Laptops,Credit Card,Delhi,0.0
+CUST0126,238129.04,3,79376.34666666666,0,Gold,Smartphones,UPI,Pune,0.0
+CUST0127,110249.96,2,55124.98,0,Silver,Smartphones,UPI,Bangalore,0.0
+CUST0128,688889.93,7,98412.84714285715,1,Gold,Smartphones,UPI,Ahmedabad,14.3
+CUST0129,13344.39,2,6672.195,0,Bronze,Accessories,UPI,Mumbai,0.0
+CUST0130,43639.08,2,21819.54,0,Bronze,Audio & Headphones,Cash on Delivery,Hyderabad,0.0
+CUST0131,353778.69,3,117926.23,0,Gold,Laptops,UPI,Delhi,0.0
+CUST0132,388069.88,2,194034.94,0,Gold,Smartphones,UPI,Mumbai,0.0
+CUST0133,113046.89,2,56523.445,0,Silver,Smart Watches,UPI,Mumbai,0.0
+CUST0134,378776.18,7,54110.88285714285,1,Gold,Laptops,UPI,Mumbai,14.3
+CUST0135,321857.93,5,64371.585999999996,0,Gold,Laptops,UPI,Mumbai,0.0
+CUST0136,204026.77999999997,3,68008.92666666665,0,Gold,Smartphones,UPI,Mumbai,0.0
+CUST0137,33841.65,3,11280.550000000001,2,Bronze,Tablets,Credit Card,Delhi,66.7
+CUST0138,74684.62,1,74684.62,0,Bronze,Smartphones,Net Banking,Pune,0.0
+CUST0139,113144.7,3,37714.9,0,Silver,Accessories,Cash on Delivery,Pune,0.0
+CUST0140,79381.01999999999,2,39690.509999999995,1,Bronze,Tablets,Net Banking,Mumbai,50.0
+CUST0141,116930.04000000001,3,38976.68,0,Silver,Smart Watches,UPI,Delhi,0.0
+CUST0142,343350.34,5,68670.068,0,Gold,Laptops,UPI,Delhi,0.0
+CUST0143,349509.99,4,87377.4975,0,Gold,Laptops,Credit Card,Bangalore,0.0
+CUST0144,35556.92,2,17778.46,0,Bronze,Audio & Headphones,Credit Card,Kolkata,0.0
+CUST0145,201903.75,3,67301.25,0,Gold,Smart Watches,UPI,Kolkata,0.0
+CUST0146,87288.8,3,29096.266666666666,0,Silver,Audio & Headphones,UPI,Pune,0.0
+CUST0147,151554.99,4,37888.7475,0,Silver,Accessories,UPI,Chennai,0.0
+CUST0148,220559.64,4,55139.91,1,Gold,Smartphones,Debit Card,Mumbai,25.0
+CUST0149,170673.44,3,56891.14666666667,0,Silver,Laptops,UPI,Pune,0.0
+CUST0150,11105.71,2,5552.855,0,Bronze,Smart Watches,Credit Card,Mumbai,0.0
+CUST0151,181392.58000000002,2,90696.29000000001,1,Silver,Tablets,Debit Card,Bangalore,50.0
+CUST0152,150220.81,4,37555.2025,1,Silver,Smartphones,Net Banking,Kolkata,25.0
+CUST0153,46096.8,3,15365.6,0,Bronze,Smart Watches,Debit Card,Kolkata,0.0
+CUST0154,25053.41,3,8351.136666666667,0,Bronze,Audio & Headphones,Debit Card,Kolkata,0.0
+CUST0155,225238.09,5,45047.618,1,Gold,Audio & Headphones,UPI,Delhi,20.0
+CUST0156,50339.11,1,50339.11,0,Bronze,Laptops,UPI,Bangalore,0.0
+CUST0157,156660.42,1,156660.42,0,Silver,Laptops,UPI,Chennai,0.0
+CUST0158,182121.11,4,45530.2775,0,Silver,Laptops,UPI,Mumbai,0.0
+CUST0159,274967.91,2,137483.955,0,Gold,Accessories,UPI,Delhi,0.0
+CUST0161,155562.5,4,38890.625,0,Silver,Smart Watches,Credit Card,Mumbai,0.0
+CUST0162,636961.8,5,127392.36000000002,0,Gold,Audio & Headphones,UPI,Delhi,0.0
+CUST0163,52247.8,1,52247.8,0,Bronze,Tablets,Credit Card,Mumbai,0.0
+CUST0164,137979.79,3,45993.263333333336,0,Silver,Tablets,Credit Card,Bangalore,0.0
+CUST0165,80097.95,2,40048.975,0,Silver,Laptops,Cash on Delivery,Hyderabad,0.0
+CUST0167,99774.5,3,33258.166666666664,0,Silver,Smart Watches,UPI,Mumbai,0.0
+CUST0168,16614.86,1,16614.86,0,Bronze,Audio & Headphones,Debit Card,Jaipur,0.0
+CUST0170,456813.53,4,114203.3825,0,Gold,Smartphones,UPI,Kolkata,0.0
+CUST0171,28089.21,3,9363.07,0,Bronze,Audio & Headphones,Credit Card,Delhi,0.0
+CUST0172,241967.05,3,80655.68333333333,0,Gold,Smartphones,Credit Card,Bangalore,0.0
+CUST0173,148384.00999999998,3,49461.33666666666,1,Silver,Smartphones,Credit Card,Pune,33.3
+CUST0174,148297.14,3,49432.380000000005,1,Silver,Accessories,Cash on Delivery,Mumbai,33.3
+CUST0175,210503.45,5,42100.69,0,Gold,Smartphones,Credit Card,Pune,0.0
+CUST0176,94867.98,2,47433.99,0,Silver,Laptops,UPI,Kolkata,0.0
+CUST0178,123657.12999999999,4,30914.282499999998,0,Silver,Accessories,UPI,Kolkata,0.0
+CUST0179,128763.23000000001,4,32190.807500000003,0,Silver,Smart Watches,UPI,Delhi,0.0
+CUST0180,77748.47,1,77748.47,0,Bronze,Smartphones,UPI,Delhi,0.0
+CUST0181,82744.86,4,20686.215,0,Silver,Accessories,Credit Card,Jaipur,0.0
+CUST0182,45085.94,1,45085.94,0,Bronze,Laptops,UPI,Delhi,0.0
+CUST0183,52272.25,1,52272.25,0,Bronze,Smartphones,Credit Card,Kolkata,0.0
+CUST0184,109824.87,2,54912.435,0,Silver,Smartphones,UPI,Delhi,0.0
+CUST0185,293610.57,4,73402.6425,0,Gold,Laptops,Credit Card,Hyderabad,0.0
+CUST0186,60190.94,1,60190.94,0,Bronze,Smartphones,Credit Card,Hyderabad,0.0
+CUST0187,38458.9,1,38458.9,0,Bronze,Smartphones,UPI,Mumbai,0.0
+CUST0188,170503.25,5,34100.65,1,Silver,Tablets,UPI,Delhi,20.0
+CUST0189,84374.8,3,28124.933333333334,0,Silver,Tablets,UPI,Kolkata,0.0
+CUST0190,50827.75,1,50827.75,0,Bronze,Laptops,Debit Card,Chennai,0.0
+CUST0191,362683.24000000005,3,120894.41333333334,0,Gold,Smartphones,UPI,Delhi,0.0
+CUST0192,175178.47,2,87589.235,0,Silver,Laptops,UPI,Pune,0.0
+CUST0193,187599.82,5,37519.964,0,Silver,Accessories,UPI,Delhi,0.0
+CUST0194,2901.56,1,2901.56,0,Bronze,Smart Watches,Debit Card,Delhi,0.0
+CUST0195,385589.47000000003,4,96397.36750000001,0,Gold,Tablets,Credit Card,Pune,0.0
+CUST0196,61866.78,2,30933.39,1,Bronze,Accessories,Credit Card,Chennai,50.0
+CUST0197,76321.68,2,38160.84,0,Bronze,Accessories,Debit Card,Bangalore,0.0
+CUST0198,190042.11,3,63347.369999999995,1,Silver,Laptops,UPI,Bangalore,33.3
+CUST0199,147669.29,3,49223.09666666667,0,Silver,Smart Watches,Net Banking,Bangalore,0.0
+CUST0200,227352.46,5,45470.492,0,Gold,Smart Watches,Credit Card,Delhi,0.0
+CUST0201,44802.12,1,44802.12,0,Bronze,Smart Watches,Debit Card,Delhi,0.0
+CUST0202,215193.87,5,43038.774,1,Gold,Laptops,Credit Card,Mumbai,20.0
+CUST0203,43677.06,2,21838.53,0,Bronze,Audio & Headphones,UPI,Pune,0.0
+CUST0204,370848.43,5,74169.686,0,Gold,Laptops,UPI,Delhi,0.0
+CUST0205,233319.92,4,58329.98,0,Gold,Laptops,UPI,Mumbai,0.0
+CUST0206,51015.68,2,25507.84,0,Bronze,Laptops,UPI,Bangalore,0.0
+CUST0207,202929.57,4,50732.3925,0,Gold,Smart Watches,Net Banking,Pune,0.0
+CUST0208,135785.13999999998,4,33946.284999999996,0,Silver,Laptops,Debit Card,Delhi,0.0
+CUST0209,575073.38,3,191691.12666666668,0,Gold,Laptops,Credit Card,Delhi,0.0
+CUST0210,89455.44,4,22363.86,0,Silver,Smartphones,Credit Card,Bangalore,0.0
+CUST0211,145301.13,3,48433.71,0,Silver,Smartphones,UPI,Pune,0.0
+CUST0212,43055.5,1,43055.5,0,Bronze,Smartphones,UPI,Delhi,0.0
+CUST0213,229709.7,6,38284.950000000004,1,Gold,Tablets,Credit Card,Bangalore,16.7
+CUST0214,3949.08,1,3949.08,0,Bronze,Accessories,Credit Card,Chennai,0.0
+CUST0215,399360.07999999996,7,57051.439999999995,0,Gold,Smartphones,Credit Card,Delhi,0.0
+CUST0216,279989.06,4,69997.265,0,Gold,Smartphones,Cash on Delivery,Kolkata,0.0
+CUST0217,749200.72,7,107028.67428571428,0,Gold,Laptops,Credit Card,Mumbai,0.0
+CUST0218,393886.81,5,78777.362,1,Gold,Laptops,Debit Card,Chennai,20.0
+CUST0219,63084.45,1,63084.45,1,Bronze,Laptops,Credit Card,Chennai,100.0
+CUST0221,3943.11,2,1971.555,0,Bronze,Audio & Headphones,Credit Card,Delhi,0.0
+CUST0222,150652.81,3,50217.60333333333,0,Silver,Tablets,Debit Card,Mumbai,0.0
+CUST0223,89719.16,2,44859.58,0,Silver,Laptops,UPI,Kolkata,0.0
+CUST0224,49490.86,1,49490.86,0,Bronze,Laptops,UPI,Chennai,0.0
+CUST0225,418403.07,5,83680.614,1,Gold,Tablets,UPI,Chennai,20.0
+CUST0226,39364.41,2,19682.205,0,Bronze,Audio & Headphones,UPI,Delhi,0.0
+CUST0227,236861.25,5,47372.25,0,Gold,Audio & Headphones,UPI,Mumbai,0.0
+CUST0228,377141.47,6,62856.91166666666,0,Gold,Smartphones,UPI,Mumbai,0.0
+CUST0229,159095.32,2,79547.66,0,Silver,Smartphones,UPI,Mumbai,0.0
+CUST0230,110570.54000000001,3,36856.84666666667,0,Silver,Smartphones,UPI,Delhi,0.0
+CUST0231,185864.52,4,46466.13,0,Silver,Audio & Headphones,UPI,Mumbai,0.0
+CUST0232,225755.24,2,112877.62,0,Gold,Smartphones,Credit Card,Mumbai,0.0
+CUST0233,71707.44,3,23902.48,0,Bronze,Audio & Headphones,Cash on Delivery,Jaipur,0.0
+CUST0234,491878.04,6,81979.67333333332,0,Gold,Laptops,Debit Card,Delhi,0.0
+CUST0235,177146.47,4,44286.6175,1,Silver,Audio & Headphones,UPI,Chennai,25.0
+CUST0236,2111.74,1,2111.74,0,Bronze,Audio & Headphones,Credit Card,Delhi,0.0
+CUST0237,96650.66,5,19330.132,0,Silver,Audio & Headphones,UPI,Ahmedabad,0.0
+CUST0238,85003.4,3,28334.466666666664,0,Silver,Smart Watches,Debit Card,Kolkata,0.0
+CUST0239,431941.07,4,107985.2675,0,Gold,Laptops,Debit Card,Mumbai,0.0
+CUST0240,51609.4,1,51609.4,0,Bronze,Laptops,UPI,Bangalore,0.0
+CUST0241,375061.68,7,53580.24,2,Gold,Smartphones,Debit Card,Bangalore,28.6
+CUST0242,1291.71,1,1291.71,0,Bronze,Accessories,UPI,Ahmedabad,0.0
+CUST0243,340061.62,3,113353.87333333334,0,Gold,Smartphones,Cash on Delivery,Hyderabad,0.0
+CUST0244,873751.94,5,174750.38799999998,1,Gold,Laptops,UPI,Bangalore,20.0
+CUST0245,162784.4,6,27130.733333333334,0,Silver,Accessories,Credit Card,Chennai,0.0
+CUST0246,45755.86,2,22877.93,0,Bronze,Audio & Headphones,Net Banking,Kolkata,0.0
+CUST0247,165787.63,4,41446.9075,0,Silver,Smartphones,Debit Card,Delhi,0.0
+CUST0248,54074.99,2,27037.495,0,Bronze,Audio & Headphones,UPI,Mumbai,0.0
+CUST0249,104396.75,2,52198.375,0,Silver,Audio & Headphones,Cash on Delivery,Delhi,0.0
+CUST0250,389543.32999999996,5,77908.666,0,Gold,Laptops,Debit Card,Mumbai,0.0
+CUST0251,197419.91,5,39483.982,3,Silver,Audio & Headphones,Credit Card,Mumbai,60.0
+CUST0252,297221.84,3,99073.94666666667,0,Gold,Laptops,Debit Card,Jaipur,0.0
+CUST0253,28887.78,3,9629.26,0,Bronze,Audio & Headphones,UPI,Pune,0.0
+CUST0254,82182.1,2,41091.05,0,Silver,Audio & Headphones,Net Banking,Kolkata,0.0
+CUST0255,14918.01,1,14918.01,0,Bronze,Tablets,UPI,Delhi,0.0
+CUST0256,93464.08,1,93464.08,0,Silver,Smartphones,UPI,Pune,0.0
+CUST0257,198302.31,3,66100.77,0,Silver,Laptops,Credit Card,Bangalore,0.0
+CUST0259,64004.81,3,21334.936666666665,0,Bronze,Accessories,Debit Card,Hyderabad,0.0
+CUST0260,404910.74,8,50613.8425,1,Gold,Smartphones,UPI,Mumbai,12.5
+CUST0261,304446.37,6,50741.06166666667,1,Gold,Laptops,UPI,Chennai,16.7
+CUST0262,231786.08000000002,5,46357.216,0,Gold,Audio & Headphones,Cash on Delivery,Jaipur,0.0
+CUST0263,242504.76,1,242504.76,0,Gold,Smartphones,Credit Card,Pune,0.0
+CUST0264,67679.71,1,67679.71,0,Bronze,Smartphones,UPI,Bangalore,0.0
+CUST0265,264473.61,4,66118.4025,0,Gold,Smartphones,Credit Card,Mumbai,0.0
+CUST0266,109136.74,4,27284.185,0,Silver,Audio & Headphones,UPI,Mumbai,0.0
+CUST0267,7708.76,2,3854.38,0,Bronze,Accessories,Net Banking,Chennai,0.0
+CUST0268,110669.14000000001,2,55334.57000000001,0,Silver,Audio & Headphones,Cash on Delivery,Mumbai,0.0
+CUST0269,178593.17,2,89296.585,0,Silver,Laptops,Debit Card,Bangalore,0.0
+CUST0270,138466.28,4,34616.57,0,Silver,Audio & Headphones,Debit Card,Chennai,0.0
+CUST0271,27337.52,1,27337.52,0,Bronze,Smart Watches,Credit Card,Mumbai,0.0
+CUST0272,228024.43,4,57006.1075,0,Gold,Smartphones,Credit Card,Mumbai,0.0
+CUST0273,133886.42,3,44628.80666666667,1,Silver,Smartphones,Credit Card,Ahmedabad,33.3
+CUST0274,274920.65,4,68730.1625,0,Gold,Smart Watches,UPI,Mumbai,0.0
+CUST0275,39951.36,2,19975.68,0,Bronze,Smart Watches,Credit Card,Ahmedabad,0.0
+CUST0276,151327.03,3,50442.34333333333,0,Silver,Laptops,Credit Card,Delhi,0.0
+CUST0277,101513.52,3,33837.840000000004,0,Silver,Laptops,UPI,Ahmedabad,0.0
+CUST0278,20489.21,3,6829.736666666667,0,Bronze,Smart Watches,Credit Card,Jaipur,0.0
+CUST0279,30826.08,1,30826.08,0,Bronze,Tablets,UPI,Hyderabad,0.0
+CUST0280,187487.69,4,46871.9225,1,Silver,Accessories,Debit Card,Chennai,25.0
+CUST0281,311009.20999999996,2,155504.60499999998,0,Gold,Smartphones,Debit Card,Delhi,0.0
+CUST0282,203967.13,3,67989.04333333333,0,Gold,Smartphones,Credit Card,Mumbai,0.0
+CUST0283,151027.36000000002,2,75513.68000000001,0,Silver,Audio & Headphones,Debit Card,Delhi,0.0
+CUST0284,1581.28,1,1581.28,0,Bronze,Smart Watches,Debit Card,Delhi,0.0
+CUST0285,185428.05,2,92714.025,0,Silver,Smartphones,Debit Card,Pune,0.0
+CUST0286,216988.83000000002,4,54247.207500000004,0,Gold,Smartphones,UPI,Bangalore,0.0
+CUST0288,269651.79000000004,5,53930.35800000001,0,Gold,Audio & Headphones,UPI,Chennai,0.0
+CUST0289,47150.11,2,23575.055,0,Bronze,Laptops,Credit Card,Chennai,0.0
+CUST0290,119977.58,3,39992.526666666665,0,Silver,Accessories,Credit Card,Mumbai,0.0
+CUST0291,313493.6,6,52248.93333333333,1,Gold,Smartphones,Credit Card,Bangalore,16.7
+CUST0292,317312.57,5,63462.514,0,Gold,Smartphones,Credit Card,Delhi,0.0
+CUST0293,215763.78000000003,6,35960.630000000005,1,Gold,Accessories,UPI,Mumbai,16.7
+CUST0294,529669.55,7,75667.07857142857,2,Gold,Smartphones,UPI,Bangalore,28.6
+CUST0295,377044.66000000003,4,94261.16500000001,0,Gold,Smartphones,Net Banking,Bangalore,0.0
+CUST0296,85543.31,2,42771.655,0,Silver,Smartphones,UPI,Kolkata,0.0
+CUST0297,412791.75,6,68798.625,1,Gold,Audio & Headphones,Debit Card,Hyderabad,16.7
+CUST0298,129114.28,3,43038.09333333333,0,Silver,Laptops,UPI,Mumbai,0.0
+CUST0299,79578.97,2,39789.485,0,Bronze,Smartphones,UPI,Chennai,0.0
+CUST0300,200089.14,4,50022.285,0,Gold,Laptops,UPI,Mumbai,0.0
+CUST0301,108262.82,1,108262.82,0,Silver,Laptops,Credit Card,Mumbai,0.0
+CUST0302,6889.69,2,3444.845,0,Bronze,Smart Watches,Debit Card,Pune,0.0
+CUST0303,33185.21,1,33185.21,0,Bronze,Tablets,Debit Card,Kolkata,0.0
+CUST0304,230653.32,4,57663.33,1,Gold,Tablets,Debit Card,Mumbai,25.0
+CUST0306,72952.68,3,24317.559999999998,0,Bronze,Audio & Headphones,UPI,Chennai,0.0
+CUST0307,37732.63,1,37732.63,0,Bronze,Smartphones,Debit Card,Kolkata,0.0
+CUST0308,127872.03,2,63936.015,0,Silver,Accessories,UPI,Delhi,0.0
+CUST0309,112492.43000000001,3,37497.47666666667,0,Silver,Audio & Headphones,Credit Card,Pune,0.0
+CUST0310,245010.83,3,81670.27666666666,0,Gold,Smartphones,UPI,Bangalore,0.0
+CUST0311,189088.21,7,27012.601428571426,0,Silver,Accessories,UPI,Chennai,0.0
+CUST0312,476520.98000000004,5,95304.19600000001,1,Gold,Smartphones,Net Banking,Ahmedabad,20.0
+CUST0313,296793.11000000004,5,59358.62200000001,0,Gold,Smartphones,UPI,Mumbai,0.0
+CUST0314,4521.26,1,4521.26,0,Bronze,Accessories,Debit Card,Pune,0.0
+CUST0315,193820.38,5,38764.076,1,Silver,Smartphones,Credit Card,Delhi,20.0
+CUST0316,109210.16,3,36403.386666666665,0,Silver,Smartphones,Credit Card,Bangalore,0.0
+CUST0317,168554.12,5,33710.824,0,Silver,Smart Watches,UPI,Mumbai,0.0
+CUST0318,63832.98,1,63832.98,0,Bronze,Smartphones,Debit Card,Ahmedabad,0.0
+CUST0319,80536.2,2,40268.1,0,Silver,Audio & Headphones,Debit Card,Delhi,0.0
+CUST0320,94985.12,2,47492.56,0,Silver,Laptops,Credit Card,Delhi,0.0
+CUST0321,276573.18,3,92191.06,0,Gold,Smartphones,UPI,Mumbai,0.0
+CUST0322,147715.1,4,36928.775,0,Silver,Accessories,UPI,Delhi,0.0
+CUST0323,151828.46,2,75914.23,0,Silver,Smartphones,UPI,Mumbai,0.0
+CUST0324,45179.81,2,22589.905,0,Bronze,Audio & Headphones,Credit Card,Mumbai,0.0
+CUST0325,76349.48000000001,2,38174.740000000005,0,Bronze,Audio & Headphones,Cash on Delivery,Mumbai,0.0
+CUST0326,705328.69,6,117554.78166666666,0,Gold,Laptops,UPI,Chennai,0.0
+CUST0327,195709.46,2,97854.73,0,Silver,Laptops,Net Banking,Mumbai,0.0
+CUST0328,281266.73,5,56253.346,2,Gold,Smartphones,Credit Card,Bangalore,40.0
+CUST0329,88116.86,3,29372.286666666667,0,Silver,Audio & Headphones,Debit Card,Bangalore,0.0
+CUST0330,49750.09,2,24875.045,0,Bronze,Audio & Headphones,Credit Card,Bangalore,0.0
+CUST0331,256887.75,6,42814.625,0,Gold,Smartphones,Credit Card,Bangalore,0.0
+CUST0332,122104.65999999999,2,61052.329999999994,1,Silver,Accessories,UPI,Kolkata,50.0
+CUST0333,191103.25,3,63701.083333333336,0,Silver,Laptops,Debit Card,Lucknow,0.0
+CUST0334,23315.54,2,11657.77,0,Bronze,Tablets,Debit Card,Hyderabad,0.0
+CUST0335,173615.82,5,34723.164000000004,2,Silver,Tablets,UPI,Hyderabad,40.0
+CUST0336,29492.61,1,29492.61,0,Bronze,Audio & Headphones,UPI,Hyderabad,0.0
+CUST0337,192075.86,3,64025.28666666666,0,Silver,Smartphones,Credit Card,Bangalore,0.0
+CUST0338,276042.93,4,69010.7325,0,Gold,Laptops,Cash on Delivery,Delhi,0.0
+CUST0339,261665.77000000002,6,43610.96166666667,0,Gold,Audio & Headphones,Debit Card,Mumbai,0.0
+CUST0340,125232.61,2,62616.305,1,Silver,Smart Watches,UPI,Kolkata,50.0
+CUST0341,116461.95,4,29115.4875,0,Silver,Audio & Headphones,UPI,Chennai,0.0
+CUST0342,3632.92,1,3632.92,0,Bronze,Accessories,Credit Card,Bangalore,0.0
+CUST0343,97121.92,2,48560.96,0,Silver,Laptops,Net Banking,Ahmedabad,0.0
+CUST0344,176732.53999999998,5,35346.507999999994,0,Silver,Audio & Headphones,Debit Card,Pune,0.0
+CUST0345,131418.45,4,32854.6125,1,Silver,Smartphones,Debit Card,Pune,25.0
+CUST0346,87154.12,2,43577.06,0,Silver,Accessories,Net Banking,Pune,0.0
+CUST0348,180435.13,5,36087.026,0,Silver,Laptops,UPI,Delhi,0.0
+CUST0349,84703.48,4,21175.87,0,Silver,Audio & Headphones,Credit Card,Delhi,0.0
+CUST0350,156561.12,4,39140.28,0,Silver,Accessories,Debit Card,Mumbai,0.0
+CUST0351,350838.80000000005,4,87709.70000000001,1,Gold,Smartphones,UPI,Hyderabad,25.0
+CUST0352,234534.8,2,117267.4,0,Gold,Smartphones,UPI,Bangalore,0.0
+CUST0353,201379.77,6,33563.295,0,Gold,Audio & Headphones,UPI,Hyderabad,0.0
+CUST0354,76775.58,1,76775.58,0,Bronze,Smartphones,UPI,Pune,0.0
+CUST0355,218535.82,4,54633.955,0,Gold,Smart Watches,Credit Card,Bangalore,0.0
+CUST0356,239103.47999999998,2,119551.73999999999,0,Gold,Laptops,Credit Card,Hyderabad,0.0
+CUST0358,248868.61,6,41478.10166666666,0,Gold,Audio & Headphones,Credit Card,Ahmedabad,0.0
+CUST0359,60156.39000000001,3,20052.13,0,Bronze,Audio & Headphones,Credit Card,Chennai,0.0
+CUST0360,380874.45,5,76174.89,0,Gold,Laptops,Net Banking,Delhi,0.0
+CUST0361,45958.14,1,45958.14,0,Bronze,Laptops,UPI,Bangalore,0.0
+CUST0362,342179.86,2,171089.93,1,Gold,Laptops,UPI,Chennai,50.0
+CUST0363,289804.19,5,57960.838,0,Gold,Accessories,Credit Card,Hyderabad,0.0
+CUST0364,134226.0,3,44742.0,1,Silver,Smart Watches,Debit Card,Lucknow,33.3
+CUST0365,33224.63,3,11074.876666666665,0,Bronze,Accessories,Credit Card,Mumbai,0.0
+CUST0366,212092.65,2,106046.325,1,Gold,Laptops,UPI,Jaipur,50.0
+CUST0367,229260.9,5,45852.18,0,Gold,Smartphones,Net Banking,Mumbai,0.0
+CUST0368,123397.84000000001,3,41132.613333333335,2,Silver,Audio & Headphones,Debit Card,Bangalore,66.7
+CUST0369,99190.54000000001,2,49595.270000000004,0,Silver,Accessories,Credit Card,Kolkata,0.0
+CUST0370,205014.44,2,102507.22,1,Gold,Laptops,Credit Card,Delhi,50.0
+CUST0371,12786.78,2,6393.39,1,Bronze,Smart Watches,Credit Card,Jaipur,50.0
+CUST0372,85587.62000000001,2,42793.810000000005,0,Silver,Audio & Headphones,Debit Card,Delhi,0.0
+CUST0373,352598.25,2,176299.125,0,Gold,Smartphones,UPI,Delhi,0.0
+CUST0374,150201.04,5,30040.208000000002,1,Silver,Tablets,Credit Card,Kolkata,20.0
+CUST0375,16126.37,1,16126.37,0,Bronze,Smart Watches,UPI,Jaipur,0.0
+CUST0376,292581.51,7,41797.35857142857,1,Gold,Tablets,UPI,Mumbai,14.3
+CUST0377,73743.07,2,36871.535,1,Bronze,Smart Watches,Debit Card,Mumbai,50.0
+CUST0378,335274.17000000004,5,67054.834,2,Gold,Smart Watches,UPI,Delhi,40.0
+CUST0379,571101.55,5,114220.31000000001,2,Gold,Laptops,Debit Card,Lucknow,40.0
+CUST0380,444086.37,7,63440.909999999996,1,Gold,Smartphones,UPI,Kolkata,14.3
+CUST0381,132233.69,3,44077.89666666667,0,Silver,Smart Watches,UPI,Pune,0.0
+CUST0384,36954.24,1,36954.24,0,Bronze,Smartphones,UPI,Hyderabad,0.0
+CUST0385,57023.29,3,19007.763333333332,0,Bronze,Tablets,UPI,Chennai,0.0
+CUST0386,45646.17,1,45646.17,1,Bronze,Laptops,Credit Card,Bangalore,100.0
+CUST0387,179852.85,3,59950.950000000004,0,Silver,Laptops,Debit Card,Pune,0.0
+CUST0388,125419.97,6,20903.328333333335,1,Silver,Accessories,UPI,Delhi,16.7
+CUST0390,16947.87,3,5649.29,0,Bronze,Accessories,Credit Card,Delhi,0.0
+CUST0391,160889.85,2,80444.925,0,Silver,Smartphones,Debit Card,Chennai,0.0
+CUST0392,121282.42,1,121282.42,0,Silver,Laptops,Debit Card,Ahmedabad,0.0
+CUST0393,185773.77,4,46443.4425,0,Silver,Smartphones,Net Banking,Kolkata,0.0
+CUST0394,270248.66,4,67562.165,0,Gold,Smartphones,UPI,Ahmedabad,0.0
+CUST0395,64800.04,1,64800.04,0,Bronze,Audio & Headphones,Debit Card,Bangalore,0.0
+CUST0396,3878.22,1,3878.22,0,Bronze,Accessories,Credit Card,Mumbai,0.0
+CUST0397,52839.28,2,26419.64,0,Bronze,Smart Watches,Credit Card,Pune,0.0
+CUST0398,355621.32,3,118540.44,1,Gold,Laptops,Credit Card,Delhi,33.3
+CUST0399,4676.54,2,2338.27,0,Bronze,Audio & Headphones,Debit Card,Delhi,0.0
+CUST0400,10628.0,2,5314.0,0,Bronze,Accessories,UPI,Delhi,0.0
+CUST_UNKNOWN,1259390.55,22,57245.025,1,Gold,Laptops,UPI,Hyderabad,4.5
