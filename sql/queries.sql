@@ -1,110 +1,69 @@
--- 
--- BLUESTOCK MF - 10 ANALYTICAL SQL QUERIES
+-- Query: top_5_funds_by_aum
+SELECT scheme_name, fund_house, aum_crore
+        FROM fact_performance fp
+        JOIN dim_fund df ON fp.amfi_code = df.amfi_code
+        ORDER BY aum_crore DESC
+        LIMIT 5;
 
--- Q1: Top 5 Fund Houses by AUM
-SELECT
-    fund_house,
-    ROUND(SUM(aum_crores), 2) AS total_aum_crores
-FROM fact_aum
-GROUP BY fund_house
-ORDER BY total_aum_crores DESC
-LIMIT 5;
+-- Query: avg_nav_per_month
+SELECT dd.year, dd.month, df.scheme_name, ROUND(AVG(fn.nav), 2) AS avg_nav
+        FROM fact_nav fn
+        JOIN dim_date dd ON fn.date_id = dd.date_id
+        JOIN dim_fund df ON fn.amfi_code = df.amfi_code
+        GROUP BY dd.year, dd.month, df.scheme_name
+        ORDER BY dd.year, dd.month;
 
--- Q2: Average NAV Per Month
-SELECT
-    STRFTIME('%Y-%m', date) AS month,
-    amfi_code,
-    ROUND(AVG(nav), 4)      AS avg_nav
-FROM fact_nav
-GROUP BY month, amfi_code
-ORDER BY month DESC
-LIMIT 10;
+-- Query: sip_yoy_growth
+SELECT dd.year, dd.month, SUM(ft.amount_inr) AS total_sip_amount
+        FROM fact_transactions ft
+        JOIN dim_date dd ON ft.date_id = dd.date_id
+        WHERE ft.transaction_type = 'SIP'
+        GROUP BY dd.year, dd.month
+        ORDER BY dd.year, dd.month;
 
--- Q3: SIP Year-on-Year Growth
-SELECT
-    STRFTIME('%Y', transaction_date) AS year,
-    COUNT(*)                          AS sip_count,
-    ROUND(SUM(amount), 2)             AS total_sip_amount
-FROM fact_transactions
-WHERE UPPER(transaction_type) = 'SIP'
-GROUP BY year
-ORDER BY year;
+-- Query: transactions_by_state
+SELECT state, COUNT(*) AS num_transactions, SUM(amount_inr) AS total_amount
+        FROM fact_transactions
+        GROUP BY state
+        ORDER BY total_amount DESC;
 
--- Q4: Transactions by State
-SELECT
-    state,
-    COUNT(*)              AS total_transactions,
-    ROUND(SUM(amount), 2) AS total_amount
-FROM fact_transactions
-GROUP BY state
-ORDER BY total_transactions DESC
-LIMIT 10;
+-- Query: funds_with_low_expense_ratio
+SELECT scheme_name, fund_house, expense_ratio_pct
+        FROM dim_fund
+        WHERE expense_ratio_pct < 1.0
+        ORDER BY expense_ratio_pct ASC;
 
--- Q5: Funds with Expense Ratio < 1%
-SELECT
-    scheme_name,
-    fund_house,
-    category,
-    expense_ratio_pct
-FROM dim_fund
-WHERE expense_ratio_pct < 1.0
-ORDER BY expense_ratio_pct ASC
-LIMIT 10;
+-- Query: top_5_funds_by_1yr_return
+SELECT df.scheme_name, fp.return_1yr_pct
+        FROM fact_performance fp
+        JOIN dim_fund df ON fp.amfi_code = df.amfi_code
+        ORDER BY fp.return_1yr_pct DESC
+        LIMIT 5;
 
--- Q6: Top 10 NAV Growth Funds
-SELECT
-    f.scheme_name,
-    f.fund_house,
-    f.category,
-    ROUND(MIN(n.nav), 2)                AS start_nav,
-    ROUND(MAX(n.nav), 2)                AS end_nav,
-    ROUND((MAX(n.nav)-MIN(n.nav))
-          /MIN(n.nav)*100, 2)           AS growth_pct
-FROM fact_nav n
-JOIN dim_fund f ON n.amfi_code = f.amfi_code
-GROUP BY n.amfi_code
-ORDER BY growth_pct DESC
-LIMIT 10;
+-- Query: kyc_status_breakdown
+SELECT kyc_status, COUNT(*) AS num_investors, SUM(amount_inr) AS total_amount
+        FROM fact_transactions
+        GROUP BY kyc_status;
 
--- Q7: Monthly SIP Trend
-SELECT
-    STRFTIME('%Y-%m', transaction_date) AS month,
-    COUNT(*)                             AS sip_count,
-    ROUND(SUM(amount), 2)               AS total_sip
-FROM fact_transactions
-WHERE UPPER(transaction_type) = 'SIP'
-GROUP BY month
-ORDER BY month
-LIMIT 12;
+-- Query: transaction_type_distribution
+SELECT transaction_type, COUNT(*) AS num_transactions,
+               ROUND(SUM(amount_inr), 2) AS total_amount,
+               ROUND(AVG(amount_inr), 2) AS avg_amount
+        FROM fact_transactions
+        GROUP BY transaction_type;
 
--- Q8: Category-wise Transaction Volume
-SELECT
-    f.category,
-    COUNT(t.rowid)         AS txn_count,
-    ROUND(SUM(t.amount),2) AS total_amount
-FROM fact_transactions t
-JOIN dim_fund f ON t.amfi_code = f.amfi_code
-GROUP BY f.category
-ORDER BY total_amount DESC;
+-- Query: high_risk_high_sharpe_funds
+SELECT df.scheme_name, df.risk_category, fp.sharpe_ratio, fp.return_3yr_pct
+    FROM fact_performance fp
+    JOIN dim_fund df ON fp.amfi_code = df.amfi_code
+    WHERE df.risk_category IN ('High', 'Very High') AND fp.sharpe_ratio > 0.8
+    ORDER BY fp.sharpe_ratio DESC;
 
--- Q9: Risk Category vs Avg Expense Ratio
-SELECT
-    risk_category,
-    COUNT(*)                          AS scheme_count,
-    ROUND(AVG(expense_ratio_pct), 4)  AS avg_expense_ratio,
-    ROUND(MIN(expense_ratio_pct), 4)  AS min_expense,
-    ROUND(MAX(expense_ratio_pct), 4)  AS max_expense
-FROM dim_fund
-GROUP BY risk_category
-ORDER BY avg_expense_ratio;
+-- Query: city_tier_investment_pattern
+SELECT city_tier, COUNT(*) AS num_transactions,
+               ROUND(SUM(amount_inr), 2) AS total_amount,
+               ROUND(AVG(amount_inr), 2) AS avg_ticket_size
+        FROM fact_transactions
+        GROUP BY city_tier
+        ORDER BY total_amount DESC;
 
--- Q10: Top Fund Managers by Scheme Count
-SELECT
-    fund_manager,
-    COUNT(*)                          AS scheme_count,
-    ROUND(AVG(expense_ratio_pct), 4)  AS avg_expense,
-    GROUP_CONCAT(DISTINCT category)   AS categories
-FROM dim_fund
-GROUP BY fund_manager
-ORDER BY scheme_count DESC
-LIMIT 10;
