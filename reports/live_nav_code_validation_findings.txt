@@ -1,10 +1,15 @@
 
+<<<<<<< HEAD
 LIVE NAV FETCH — DATA SOURCE VALIDATION FINDINGS
+=======
+LIVE NAV FETCH - DATA SOURCE VALIDATION FINDINGS
+>>>>>>> 0fe473c9a31a89642ef5800269374a54a61aef6a
 =================================================
 
 Objective: Fetch live NAV data from mfapi.in for 6 AMFI scheme codes referenced
 in the assignment (125497, 119551, 120503, 118632, 119092, 120841).
 
+<<<<<<< HEAD
 Cross-check performed: Compared scheme_name/fund_house returned by the live
 mfapi.in API against (a) the assignment's expected fund names, and (b) the
 fund_master.csv provided in this project.
@@ -35,3 +40,22 @@ Recommendation for Day 2+:
     (successful API calls, correct JSON parsing, valid NAV history returned)
     even though the specific codes given don't map to the intended funds
     in the current live registry.
+=======
+Finding 1 - Internal consistency:
+  All AMFI codes referenced in the assignment brief exactly match the codes
+  present in fund_master.csv.
+
+Finding 2 - External mismatch with live registry:
+  When queried against the live mfapi.in API, only 1 of 6 (118632, Nippon
+  India Large Cap) returned the expected fund. The remaining 5 codes
+  returned unrelated schemes.
+
+Conclusion:
+  The provided CSV datasets are simulated/practice data and not a live
+  extract of the current AMFI registry. AMFI codes get reassigned over
+  time, so a code valid at one point may point to a different fund today.
+
+Recommendation:
+  Use fund_master.csv as the source of truth for AMFI code -> fund name
+  mapping throughout this project, not the live API's current mapping.
+>>>>>>> 0fe473c9a31a89642ef5800269374a54a61aef6a

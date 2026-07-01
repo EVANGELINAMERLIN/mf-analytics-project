@@ -1,11 +1,18 @@
 """
+<<<<<<< HEAD
 data_ingestion.py — Day 1: Load and validate all static CSV datasets.
+=======
+data_ingestion.py - Day 1: Load and validate all static CSV datasets.
+>>>>>>> 0fe473c9a31a89642ef5800269374a54a61aef6a
 """
 import pandas as pd
 import os
 
 RAW_DIR = "data/raw"
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0fe473c9a31a89642ef5800269374a54a61aef6a
 FILE_MAP = {
     "fund_master": "01_fund_master.csv",
     "nav_history": "02_nav_history.csv",
@@ -22,8 +29,12 @@ FILE_MAP = {
 def load_all_datasets(raw_dir=RAW_DIR):
     dfs = {}
     for name, fname in FILE_MAP.items():
+<<<<<<< HEAD
         path = os.path.join(raw_dir, fname)
         dfs[name] = pd.read_csv(path)
+=======
+        dfs[name] = pd.read_csv(os.path.join(raw_dir, fname))
+>>>>>>> 0fe473c9a31a89642ef5800269374a54a61aef6a
     return dfs
 
 def validate_amfi_codes(dfs):
@@ -40,5 +51,9 @@ if __name__ == "__main__":
     dfs = load_all_datasets()
     for name, df in dfs.items():
         print(f"{name}: {df.shape}")
+<<<<<<< HEAD
     result = validate_amfi_codes(dfs)
     print(result)
+=======
+    print(validate_amfi_codes(dfs))
+>>>>>>> 0fe473c9a31a89642ef5800269374a54a61aef6a
