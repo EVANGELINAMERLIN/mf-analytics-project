@@ -1,43 +1,105 @@
-# Data Dictionary — Mutual Fund Analytics Project
+# Data Dictionary — Bluestock MF Analytics
 
-This file explains what each column in bluestock_mf.db means.
+Auto-generated on Day 2 of the project. Documents every table in `bluestock_mf.db`.
 
-## dim_fund — one row per mutual fund scheme
-- amfi_code: unique ID for the fund
-- fund_house: which company manages it (e.g. SBI, HDFC)
-- scheme_name: full name of the fund
-- category / sub_category: type of fund (e.g. Equity, Large Cap)
-- expense_ratio_pct: yearly fee charged (%)
-- risk_category: how risky the fund is (Low/Moderate/High)
+## `dim_fund`
+**Source:** 01_fund_master.csv
 
-## dim_date — one row per calendar day
-- date_id: the date, used to link other tables to a specific day
+| Column | Type | Description |
+|---|---|---|
+| amfi_code | INTEGER, PK | Unique AMFI scheme code identifying a fund |
+| fund_house | TEXT | Asset Management Company (AMC) name |
+| scheme_name | TEXT | Full scheme name including plan/option |
+| category | TEXT | Broad fund category, e.g. Equity, Debt, Hybrid |
+| sub_category | TEXT | Fund sub-category, e.g. Large Cap, Mid Cap |
+| plan | TEXT | Regular or Direct plan |
+| launch_date | DATE | Date the scheme was launched |
+| benchmark | TEXT | Benchmark index tracked by the scheme |
+| expense_ratio_pct | REAL | Annual expense ratio charged, in percent |
+| exit_load_pct | REAL | Exit load percentage applicable on redemption |
+| min_sip_amount | REAL | Minimum SIP investment amount in INR |
+| min_lumpsum_amount | REAL | Minimum lumpsum investment amount in INR |
+| fund_manager | TEXT | Name of the fund manager |
+| risk_category | TEXT | SEBI risk-o-meter category |
+| sebi_category_code | TEXT | SEBI-defined scheme category code |
 
-## fact_nav — daily price (NAV) of each fund
-- amfi_code: which fund
-- date_id: which day
-- nav: the fund's price per unit that day
+## `dim_date`
+**Source:** Derived (generated calendar dimension)
 
-## fact_transactions — every investor transaction
-- transaction_type: SIP, Lumpsum, or Redemption
-- amount_inr: how much money, in rupees
-- state / city: where the investor is located
-- kyc_status: whether their identity is verified
+| Column | Type | Description |
+|---|---|---|
+| date_key | TEXT, PK | Date in YYYY-MM-DD format, used as join key |
+| full_date | DATE | Full calendar date |
+| year | INTEGER | Calendar year |
+| quarter | INTEGER | Calendar quarter (1-4) |
+| month | INTEGER | Calendar month (1-12) |
+| month_name | TEXT | Full month name |
+| day | INTEGER | Day of month |
+| day_of_week | TEXT | Name of weekday |
+| is_weekend | INTEGER | 1 if Saturday/Sunday, else 0 |
 
-## fact_performance — how each fund has performed
-- return_1yr_pct / return_3yr_pct / return_5yr_pct: returns over time
-- sharpe_ratio: risk-adjusted performance score
-- is_anomalous: flagged as an unusual/outlier value during cleaning
+## `fact_nav`
+**Source:** 02_nav_history.csv
 
-## fact_aum — total money managed by each fund house, over time
-- fund_house: the company
-- aum_crore: total assets managed, in crores of rupees
-- num_schemes: how many funds they run
+| Column | Type | Description |
+|---|---|---|
+| nav_id | INTEGER, PK | Surrogate key, auto-incrementing |
+| amfi_code | INTEGER, FK -> dim_fund | Scheme identifier |
+| date_key | TEXT, FK -> dim_date | NAV date |
+| nav | REAL | Net Asset Value per unit on given date, in INR |
 
-## Data quality notes
-- Missing NAV values on weekends/holidays were filled using the previous day's price.
-- All transaction amounts were checked to be greater than zero.
-- Expense ratios were checked to fall between 0.1% and 2.5%.
-- AMFI fund codes matched perfectly between our two main datasets (40/40),
-  but did NOT match the live mfapi.in website for 5 out of 6 test codes —
-  this is expected since our data is practice data, not live data.
+## `fact_transactions`
+**Source:** 08_investor_transactions.csv
+
+| Column | Type | Description |
+|---|---|---|
+| transaction_id | INTEGER, PK | Surrogate key, auto-incrementing |
+| investor_id | TEXT | Unique investor identifier |
+| amfi_code | INTEGER, FK -> dim_fund | Scheme invested in |
+| date_key | TEXT, FK -> dim_date | Transaction date |
+| transaction_type | TEXT | One of SIP, Lumpsum, Redemption |
+| amount_inr | REAL | Transaction amount in INR |
+| state | TEXT | Investor's state |
+| city | TEXT | Investor's city |
+| city_tier | TEXT | City classification, e.g. T30 (Top 30) / B30 (Beyond 30) |
+| age_group | TEXT | Investor age bracket |
+| gender | TEXT | Investor gender |
+| annual_income_lakh | REAL | Investor's annual income in INR lakh |
+| payment_mode | TEXT | Mode of payment, e.g. UPI, Cheque |
+| kyc_status | TEXT | Verified or Pending |
+
+## `fact_performance`
+**Source:** 07_scheme_performance.csv
+
+| Column | Type | Description |
+|---|---|---|
+| performance_id | INTEGER, PK | Surrogate key, auto-incrementing |
+| amfi_code | INTEGER, FK -> dim_fund | Scheme identifier |
+| return_1yr_pct | REAL | Trailing 1-year return, percent |
+| return_3yr_pct | REAL | Trailing 3-year annualised return, percent |
+| return_5yr_pct | REAL | Trailing 5-year annualised return, percent |
+| benchmark_3yr_pct | REAL | Benchmark's 3-year return, percent |
+| alpha | REAL | Excess return vs benchmark, risk-adjusted |
+| beta | REAL | Volatility relative to benchmark |
+| sharpe_ratio | REAL | Risk-adjusted return metric (excess return / std dev) |
+| sortino_ratio | REAL | Downside-risk-adjusted return metric |
+| std_dev_ann_pct | REAL | Annualised standard deviation, percent |
+| max_drawdown_pct | REAL | Maximum peak-to-trough decline, percent |
+| aum_crore | REAL | Assets Under Management, INR crore |
+| expense_ratio_pct | REAL | Annual expense ratio, percent (valid range 0.1-2.5) |
+| morningstar_rating | INTEGER | Morningstar star rating, 1-5 |
+| risk_grade | TEXT | Qualitative risk grade, e.g. Moderate |
+| is_return_anomaly | INTEGER | 1 if return values fall outside -90% to 200% (flag) |
+| is_expense_ratio_valid | INTEGER | 1 if expense_ratio_pct within 0.1%-2.5% |
+
+## `fact_aum`
+**Source:** 03_aum_by_fund_house.csv
+
+| Column | Type | Description |
+|---|---|---|
+| aum_id | INTEGER, PK | Surrogate key, auto-incrementing |
+| fund_house | TEXT | Asset Management Company name |
+| date_key | TEXT, FK -> dim_date | Reporting date |
+| aum_lakh_crore | REAL | Total AUM in INR lakh crore |
+| aum_crore | REAL | Total AUM in INR crore |
+| num_schemes | INTEGER | Number of schemes offered by the fund house |
