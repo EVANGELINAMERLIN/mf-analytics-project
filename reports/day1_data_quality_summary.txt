@@ -1,0 +1,30 @@
+
+DAY 1 DATA QUALITY SUMMARY
+===========================
+Datasets loaded: 10
+
+Row counts:
+  - fund_master: 40 rows, 15 cols
+  - nav_history: 46000 rows, 3 cols
+  - aum_by_fund_house: 90 rows, 5 cols
+  - monthly_sip_inflows: 48 rows, 6 cols
+  - category_inflows: 144 rows, 3 cols
+  - industry_folio_count: 21 rows, 6 cols
+  - scheme_performance: 40 rows, 19 cols
+  - investor_transactions: 32778 rows, 13 cols
+  - portfolio_holdings: 322 rows, 8 cols
+  - benchmark_indices: 8050 rows, 3 cols
+
+AMFI Code Validation:
+  - fund_master unique codes: 40
+  - nav_history unique codes: 40
+  - Codes missing from nav_history: 0
+  - Codes missing from fund_master: 0
+
+Anomalies noted:
+  - [monthly_sip_inflows] 12 null values across columns:
+  - [monthly_sip_inflows] yoy_growth_pct has NaNs for early months (no prior-year baseline) — expected, not an error
+
+Live NAV fetch:
+  - HDFC Top 100 Direct (125497): 3111 records fetched
+  - 5 key schemes fetched: ['SBI Bluechip Fund', 'ICICI Prudential Bluechip Fund', 'Nippon India Large Cap Fund', 'Axis Bluechip Fund', 'Kotak Bluechip Fund']

@@ -7,7 +7,3 @@ sqlalchemy
 requests
 scipy
 jupyter
-<<<<<<< HEAD
-
-=======
->>>>>>> 0fe473c9a31a89642ef5800269374a54a61aef6a
