@@ -3,12 +3,16 @@
 !data_ingestion.py
 !live_nav_fetch.py
 !requirements.txt
-!mutual fund Analytic.ipynb
 !bluestock_mf.db
+!data_dictionary.md
 !data/
 !data/**
 !sql/
 !sql/**
 !reports/
 !reports/**
+!notebooks/
+!notebooks/**
+!dashboard/
+!dashboard/**
 !.gitignore
