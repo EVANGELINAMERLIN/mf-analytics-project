@@ -1,0 +1,38 @@
+
+## Advanced Analytics - 5 Key Insights
+
+Insight 1 - Highest VaR Funds:
+Small Cap and Sectoral funds consistently show the worst
+VaR (below -2.5%), meaning on any bad day investors could
+lose more than 2.5% of their investment.
+Moderate risk investors should avoid these schemes.
+Chart: reports/charts/16_var_cvar.png
+
+Insight 2 - Investor Cohort Behaviour:
+Investors who started SIPs in 2022-2023 show higher
+average SIP amounts compared to earlier cohorts,
+indicating growing financial awareness and higher
+disposable income among newer investors.
+Chart: reports/charts/18_cohort_analysis.png
+
+Insight 3 - SIP Continuity Rate:
+Approximately 70%+ investors maintain regular SIP gaps
+under 35 days, showing strong SIP discipline.
+At-risk investors with irregular SIPs represent a key
+retention opportunity for fund houses.
+Chart: reports/charts/19_sip_continuity.png
+
+Insight 4 - Rolling Sharpe Patterns:
+Rolling 90-day Sharpe ratios reveal that most funds
+delivered Sharpe > 1 during 2023 bull run but dropped
+significantly during 2024 market corrections,
+highlighting the importance of timing in fund selection.
+Chart: reports/charts/17_rolling_sharpe.png
+
+Insight 5 - Sector Concentration Risk:
+Funds with high HHI scores (>0.25) are heavily
+concentrated in Financial Services and IT sectors.
+While this can amplify returns in bull markets,
+it significantly increases downside risk during
+sector-specific corrections.
+Chart: reports/charts/20_hhi_concentration.png
